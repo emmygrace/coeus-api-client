@@ -207,4 +207,4 @@ MIT
 
 ## Repository
 
-See the main [Gaia repository](https://github.com/your-org/gaia) for more information.
+See the [repository](https://github.com/emmygrace/gaia-api) for more information.
