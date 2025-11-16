@@ -1,11 +1,12 @@
 /**
- * @gaia-tools/api-client
+ * @gaia-tools/coeus-api-client
  * 
- * TypeScript client SDK for the Gaia astrological charting backend API.
+ * Coeus - TypeScript client SDK for the Gaia astrological charting backend API.
+ * Named after Coeus, the Titan of intellect and inquiry in Greek mythology.
  * 
  * @example
  * ```typescript
- * import { createApiClient } from '@gaia-tools/api-client';
+ * import { createApiClient } from '@gaia-tools/coeus-api-client';
  * 
  * const api = createApiClient('http://localhost:8000/api');
  * const charts = await api.charts.list();

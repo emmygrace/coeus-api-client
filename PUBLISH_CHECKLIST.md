@@ -1,6 +1,6 @@
 # Publish Checklist
 
-This document tracks the steps needed to publish `@gaia-tools/api-client` to npm.
+This document tracks the steps needed to publish `@gaia-tools/coeus-api-client` to npm.
 
 ## Pre-Publish Validation
 
@@ -8,7 +8,7 @@ Before publishing, ensure all of the following are completed:
 
 ### ✅ Package Configuration
 
-- [x] Package name updated to `@gaia-tools/api-client`
+- [x] Package name updated to `@gaia-tools/coeus-api-client`
 - [x] Package metadata (repository, license, keywords) added
 - [x] `publishConfig` set to public access
 - [x] `files` field includes only `dist` and `README.md`
@@ -92,7 +92,7 @@ Before publishing, ensure all of the following are completed:
 
 ## Post-Publish
 
-- [ ] Verify package appears on npm: https://www.npmjs.com/package/@gaia-tools/api-client
+- [ ] Verify package appears on npm: https://www.npmjs.com/package/@gaia-tools/coeus-api-client
 - [ ] Test installation in a fresh project
 - [ ] Update any documentation that references the package
 - [ ] Create a git tag for the release (if using version control)

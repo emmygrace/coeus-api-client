@@ -1,7 +1,7 @@
 {
-  "name": "@gaia-tools/api-client",
+  "name": "@gaia-tools/coeus-api-client",
   "version": "0.1.0",
-  "description": "TypeScript client SDK for the Gaia astrological charting backend API",
+  "description": "Coeus - TypeScript client SDK for the Gaia astrological charting backend API. Named after Coeus, the Titan of intellect and inquiry in Greek mythology.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "module": "dist/index.mjs",
