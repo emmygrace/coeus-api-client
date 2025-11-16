@@ -1,5 +1,5 @@
 {
-  "name": "@gaia/api-client",
+  "name": "@gaia-tools/api-client",
   "version": "0.1.0",
   "description": "TypeScript client SDK for the Gaia astrological charting backend API",
   "main": "dist/index.js",
@@ -25,11 +25,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/emmygrace/gaia-api.git"
+    "url": "https://github.com/emmygrace/gaia-api-client.git"
   },
-  "homepage": "https://github.com/emmygrace/gaia-api#readme",
+  "homepage": "https://github.com/emmygrace/gaia-api-client#readme",
   "bugs": {
-    "url": "https://github.com/emmygrace/gaia-api/issues"
+    "url": "https://github.com/emmygrace/gaia-api-client/issues"
   },
   "license": "MIT",
   "keywords": [

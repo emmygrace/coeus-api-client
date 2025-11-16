@@ -1,11 +1,11 @@
 /**
- * @gaia/api-client
+ * @gaia-tools/api-client
  * 
  * TypeScript client SDK for the Gaia astrological charting backend API.
  * 
  * @example
  * ```typescript
- * import { createApiClient } from '@gaia/api-client';
+ * import { createApiClient } from '@gaia-tools/api-client';
  * 
  * const api = createApiClient('http://localhost:8000/api');
  * const charts = await api.charts.list();

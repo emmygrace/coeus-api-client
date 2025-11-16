@@ -1,17 +1,17 @@
-# @gaia/api-client
+# @gaia-tools/api-client
 
 TypeScript client SDK for the Gaia astrological charting backend API.
 
 ## Installation
 
 ```bash
-pnpm add @gaia/api-client axios
+pnpm add @gaia-tools/api-client axios
 ```
 
 or
 
 ```bash
-npm install @gaia/api-client axios
+npm install @gaia-tools/api-client axios
 ```
 
 ## Usage
@@ -19,7 +19,7 @@ npm install @gaia/api-client axios
 ### Basic Usage
 
 ```typescript
-import { createApiClient } from '@gaia/api-client';
+import { createApiClient } from '@gaia-tools/api-client';
 
 // Create a client instance
 const api = createApiClient('http://localhost:8000/api');
@@ -33,7 +33,7 @@ const wheels = await api.wheels.list();
 ### With Authentication
 
 ```typescript
-import { createApiClient } from '@gaia/api-client';
+import { createApiClient } from '@gaia-tools/api-client';
 
 const api = createApiClient('http://localhost:8000/api', {
   headers: {
@@ -47,7 +47,7 @@ const api = createApiClient('http://localhost:8000/api', {
 The client accepts custom Axios config, allowing Next.js to pass server-side fetch adapters:
 
 ```typescript
-import { createApiClient } from '@gaia/api-client';
+import { createApiClient } from '@gaia-tools/api-client';
 
 const api = createApiClient(process.env.BACKEND_URL || '/api', {
   // Custom config for SSR
@@ -105,8 +105,8 @@ All API types are exported for use in your application:
 ### Creating and Rendering a Chart
 
 ```typescript
-import { createApiClient } from '@gaia/api-client';
-import type { ChartDefinitionCreate, ChartInstanceCreate } from '@gaia/api-client';
+import { createApiClient } from '@gaia-tools/api-client';
+import type { ChartDefinitionCreate, ChartInstanceCreate } from '@gaia-tools/api-client';
 
 const api = createApiClient('http://localhost:8000/api');
 
@@ -157,7 +157,7 @@ const instance = await api.instances.create({
 const renderData = await api.instances.render(instance.id);
 
 // Use buildIndexes for efficient lookups
-import { buildIndexes } from '@gaia/api-client';
+import { buildIndexes } from '@gaia-tools/api-client';
 const indexes = buildIndexes(renderData);
 ```
 
@@ -207,4 +207,4 @@ MIT
 
 ## Repository
 
-See the [repository](https://github.com/emmygrace/gaia-api) for more information.
+See the [repository](https://github.com/emmygrace/gaia-api-client) for more information.
