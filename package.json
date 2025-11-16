@@ -1,0 +1,62 @@
+{
+  "name": "@gaia/api-client",
+  "version": "0.1.0",
+  "description": "TypeScript client SDK for the Gaia astrological charting backend API",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "module": "dist/index.mjs",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "lint": "eslint src --ext .ts",
+    "test": "vitest",
+    "prepublishOnly": "pnpm lint && pnpm test && pnpm build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-org/gaia.git",
+    "directory": "gaia-api"
+  },
+  "homepage": "https://github.com/your-org/gaia#readme",
+  "bugs": {
+    "url": "https://github.com/your-org/gaia/issues"
+  },
+  "license": "MIT",
+  "keywords": [
+    "astrology",
+    "chart",
+    "api-client",
+    "typescript",
+    "sdk"
+  ],
+  "author": "",
+  "sideEffects": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "axios": "^1.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "axios": "^1.6.0",
+    "eslint": "^8.0.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.3.0",
+    "vitest": "^1.0.0"
+  }
+}
+
