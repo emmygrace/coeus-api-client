@@ -194,19 +194,22 @@ pnpm lint
 
 ## Publishing
 
-This package is published to npm. To publish a new version:
+This package is published to npm under the `@gaia-tools` scope. To publish a new version:
 
-1. Update the version in `package.json`
-2. Run `pnpm build` to ensure the latest code is built
-3. Run `pnpm pack` to verify the package contents
-4. Run `npm publish` (or `pnpm publish`)
+1. Update the version in `package.json` following [Semantic Versioning](https://semver.org/)
+2. Update `CHANGELOG.md` with the new version and changes
+3. Run `pnpm build` to ensure the latest code is built
+4. Run `pnpm pack` to verify the package contents
+5. Run `npm publish` (or `pnpm publish`)
 
 The `prepublishOnly` script will automatically run lint, test, and build before publishing.
 
+See [PUBLISH_CHECKLIST.md](./PUBLISH_CHECKLIST.md) for a detailed publishing checklist.
+
 ## License
 
-MIT
+MIT License - see [LICENSE](LICENSE) file for details.
 
 ## Repository
 
-See the [repository](https://github.com/emmygrace/gaia-api-client) for more information.
+See the [repository](https://github.com/emmygrace/coeus-api-client) for more information.

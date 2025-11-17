@@ -11,7 +11,7 @@ Before publishing, ensure all of the following are completed:
 - [x] Package name updated to `@gaia-tools/coeus-api-client`
 - [x] Package metadata (repository, license, keywords) added
 - [x] `publishConfig` set to public access
-- [x] `files` field includes only `dist` and `README.md`
+- [x] `files` field includes `dist`, `README.md`, `LICENSE`, and `CHANGELOG.md`
 - [x] `prepublishOnly` script configured
 - [x] Dependencies cleaned up (removed local `@ouranos/aphrodite` reference)
 - [x] Dev dependencies include all required tooling
@@ -42,7 +42,7 @@ Before publishing, ensure all of the following are completed:
 
 1. **Install Dependencies**
    ```bash
-   cd /home/emmy/git/gaia-api
+   cd /home/emmy/git/gaia-tools/coeus-api-client
    pnpm install
    ```
 
@@ -75,11 +75,14 @@ Before publishing, ensure all of the following are completed:
    This creates a tarball that you can inspect. Verify it contains:
    - `package.json`
    - `README.md`
+   - `LICENSE`
+   - `CHANGELOG.md`
    - `dist/` directory with all built files
    - No source files (`src/` should not be included)
 
-6. **Update Version** (if needed)
-   Edit `package.json` and update the version field following semantic versioning.
+6. **Update Version and Changelog** (if needed)
+   - Edit `package.json` and update the version field following semantic versioning
+   - Update `CHANGELOG.md` with the new version and changes
 
 7. **Publish**
    ```bash
