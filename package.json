@@ -49,6 +49,9 @@
   "peerDependencies": {
     "axios": "^1.6.0"
   },
+  "dependencies": {
+    "@gaia-tools/aphrodite-shared": "file:../aphrodite-shared"
+  },
   "devDependencies": {
     "@types/node": "^20.0.0",
     "@typescript-eslint/eslint-plugin": "^6.0.0",
