@@ -101,6 +101,10 @@ All API types are exported for use in your application:
 
 ### Utility Functions
 - `buildIndexes(renderData: RenderResponse): IndexesDTO` - Build lookup indexes from render response
+- `buildRenderRequestFromResponse(renderData: RenderResponse): RenderRequest` - Build a render request from existing render response data (useful for re-rendering charts)
+- `convertEphemerisToRender(ephemerisResponse: EphemerisResponse, wheelConfig?): RenderResponse` - Convert ephemeris response to render response (calculates aspects and assembles wheel)
+- `WheelAssembler` - Client-side wheel assembly service
+- `aspectService` - Client-side aspect calculation service
 
 ## Examples
 

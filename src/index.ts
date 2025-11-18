@@ -39,4 +39,5 @@ export type {
 } from './utils/aspect-service';
 export { WheelAssembler } from './utils/wheel-assembler';
 export { convertEphemerisToRender } from './utils/convert-ephemeris';
+export { buildRenderRequestFromResponse } from './utils/build-request';
 
