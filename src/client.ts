@@ -2,11 +2,13 @@ import axios, { AxiosInstance, AxiosRequestConfig } from 'axios';
 import { ChartApi, createChartApi } from './apis/charts';
 import { ChartInstanceApi, createInstanceApi } from './apis/instances';
 import { WheelApi, createWheelApi } from './apis/wheels';
+import { RenderApi, createRenderApi } from './apis/render';
 
 export interface ApiClient {
   charts: ChartApi;
   instances: ChartInstanceApi;
   wheels: WheelApi;
+  render: RenderApi;
 }
 
 export function createApiClient(
@@ -26,6 +28,7 @@ export function createApiClient(
     charts: createChartApi(axiosInstance),
     instances: createInstanceApi(axiosInstance),
     wheels: createWheelApi(axiosInstance),
+    render: createRenderApi(axiosInstance),
   };
 }
 
